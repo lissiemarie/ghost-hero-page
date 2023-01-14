@@ -1,9 +1,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #2e0101;
+    color: #fff;
 }
 
-.container {
+.container,
+footer {
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -52,12 +54,18 @@ button {
         color: #430404;
 }
 
+button:hover {
+    color: #fff;
+    background-color: #bb3030;
+    transition: all 200ms ease-out;
+}
+
 a {
     text-decoration: none;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('ghost the band.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('ghost the band.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -71,6 +79,24 @@ header {
         align-items: center;
         padding: 0px;
         gap: 32px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0;
+}
+
+footer a {
+    color: #bb3030;
+}
+
+footer a:hover {
+    color: #fff;
+    transition: all 200ms ease-out;
 }
 
 @media (max-width: 950px) {
