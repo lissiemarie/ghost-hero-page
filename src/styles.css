@@ -82,12 +82,21 @@ header {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 230px 0;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
+    max-width: 1200px;
+}
+
+footer h4 {
+    font-size: 30px;
 }
 
 footer a {
