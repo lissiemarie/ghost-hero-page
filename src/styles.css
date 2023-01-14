@@ -99,6 +99,23 @@ header {
     padding: 0 20px;
 }
 
+.why-ghost h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+     font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-decoration: underline overline #bb3030;
+}
+
+.why-ghost h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+}
+
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('footer.jpg');
     background-repeat: no-repeat;
