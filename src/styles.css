@@ -7,7 +7,8 @@ body {
 .container,
 footer,
 .about-ghost,
-.favorite-songs {
+.favorite-songs,
+.more {
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -100,7 +101,8 @@ header {
 }
 
 .why-ghost h4,
-.favorite-songs h4 {
+.favorite-songs h4,
+.more h4 {
     text-transform: uppercase;
     font-weight: 700;
      font-size: 13px;
@@ -110,7 +112,8 @@ header {
 }
 
 .why-ghost h3,
-.favorite-songs h3 {
+.favorite-songs h3,
+.more h3 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
         font-weight: 700;
@@ -154,6 +157,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #430404;
+}
+
+.spotify {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 100px;
+    margin: 20px auto;
+}
+
+.spotify iframe {
+    box-shadow: 10px 10px 40px rgba(7, 5, 20, 0.5);
 }
 
 footer {
@@ -219,10 +242,17 @@ footer a:hover {
     .song-cards {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
 
-    .card {
-        margin: 10px auto;
+    .more {
+        margin: 20px auto;
+    }
+
+    .spotify {
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 
