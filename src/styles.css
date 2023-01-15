@@ -142,6 +142,7 @@ header {
     box-shadow: 10px 10px 40px rgba(7, 5, 20, 0.2);
     border-radius: 15px;
     height: auto;
+    margin: 0 auto;
 }
 
 .card img {
